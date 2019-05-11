@@ -169,3 +169,8 @@ void DataComparison::commonWordListComparison(string pass) {//parameter refrence
 	}
 	flag1 = false; flag2 = false; flag3 = false;
 }
+
+//return vector results
+vector<DataComparison::patternStructure> DataComparison::getResults() {
+	return DataComparison::results;
+}

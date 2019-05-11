@@ -43,6 +43,7 @@ public:
 	void dobListComparison(string pass);
 	void locationListComparison(string pass);
 	void commonWordListComparison(string pass);
+	vector<patternStructure> getResults();
 	DataComparison();
 	~DataComparison();
 
