@@ -148,10 +148,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DataCleansing.h" />
+    <ClInclude Include="DataComparison.h" />
+    <ClInclude Include="FileHandling.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DataCleansing.cpp" />
+    <ClCompile Include="DataComparison.cpp" />
+    <ClCompile Include="FileHandling.cpp" />
     <ClCompile Include="predictorTest.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
