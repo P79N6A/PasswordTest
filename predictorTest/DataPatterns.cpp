@@ -119,7 +119,7 @@ void DataPatterns::undetected(string p) {
 				}
 			}
 			if ((DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len) != p_size) {
-				x_i_temp.push_back({ "Undetected/", p.substr((DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len), (p_size - 1 - (DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len))), (p_size - 1 - (DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len)), (DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len) });
+				x_i_temp.push_back({ "Undetected/", p.substr((DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len), (p_size - (DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len))), (p_size - (DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len)), (DataPatterns::splittedResults[i][x_i_size - 1].loc + DataPatterns::splittedResults[i][x_i_size - 1].len ) });
 			}
 			DataPatterns::splittedResults[i].insert(DataPatterns::splittedResults[i].end(), x_i_temp.begin(), x_i_temp.end());
 			x_i_temp.clear(); x_i_temp.shrink_to_fit();

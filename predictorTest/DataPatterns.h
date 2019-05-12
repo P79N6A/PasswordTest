@@ -14,11 +14,11 @@ public:
 	
 
 	//methods
-	string patterns(string pass);
-	void sortVectorStructOnLength(vector<DataComparison::patternStructure>& x);
-	void sortVectorStructOnLocation(vector<DataComparison::patternStructure>& x);
-	void dividePatterns(vector<DataComparison::patternStructure>& x, string p);
-	void undetected(string p);
+	static string patterns(string pass);
+	static void sortVectorStructOnLength(vector<DataComparison::patternStructure>& x);
+	static void sortVectorStructOnLocation(vector<DataComparison::patternStructure>& x);
+	static void dividePatterns(vector<DataComparison::patternStructure>& x, string p);
+	static void undetected(string p);
 
 	DataPatterns();
 	~DataPatterns();

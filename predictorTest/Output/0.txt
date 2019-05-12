@@ -1,14 +1,18 @@
 Password: jcikkksjnfem2ju
-			Pattern1: Undetected/
+			Pattern1: DOB/
 			Values1: "jcikkksjnfem2ju" Length:15 Position:0, 
 
 Password: delikiz
-			Pattern1: Common1/Undetected/
-			Values1: "deli" Length:4 Position:0, "ki" Length:2 Position:4, 
+			Pattern1: Undetected/Name/Undetected/
+			Pattern2: Undetected/Common1/Undetected/
+			Values1: "d" Length:1 Position:0, "elik" Length:4 Position:1, "iz" Length:2 Position:5, 
+			Values2: "de" Length:2 Position:0, "liki" Length:4 Position:2, "z" Length:1 Position:6, 
 
 Password: nasay01
-			Pattern1: Undetected/Common1/Undetected/
-			Values1: "na" Length:2 Position:0, "say" Length:3 Position:2, "0" Length:1 Position:5, 
+			Pattern1: Common1/Undetected/
+			Pattern2: Undetected/Name/Undetected/
+			Values1: "nasa" Length:4 Position:0, "y01" Length:3 Position:4, 
+			Values2: "n" Length:1 Position:0, "asay" Length:4 Position:1, "01" Length:2 Position:5, 
 
 Password: qazrfvedc
 			Pattern1: Undetected/email_Name/
@@ -16,7 +20,7 @@ Password: qazrfvedc
 
 Password: qazrfvedc4862
 			Pattern1: Undetected/email_Name/Undetected/
-			Values1: "q" Length:1 Position:0, "azrfvedc" Length:8 Position:1, "486" Length:3 Position:9, 
+			Values1: "q" Length:1 Position:0, "azrfvedc" Length:8 Position:1, "4862" Length:4 Position:9, 
 
 Password: 5x1cjdsb9p
 			Pattern1: Undetected/
@@ -39,16 +43,34 @@ Password: th7s
 			Values1: "th7s" Length:4 Position:0, 
 
 Password: santacruz1
-			Pattern1: Location/Undetected/
-			Pattern2: Undetected/Location/Undetected/
-			Values1: "santacruz" Length:9 Position:0, "" Length:0 Position:9, 
-			Values2: "santa" Length:5 Position:0, "cruz" Length:4 Position:5, "" Length:0 Position:9, 
+			Pattern1: Name/Undetected/
+			Pattern2: Location/Undetected/
+			Pattern3: Common1/Undetected/
+			Pattern4: Name/Name/Undetected/
+			Pattern5: Location/Undetected/
+			Pattern6: Name/Undetected/
+			Pattern7: Undetected/Name/Undetected/
+			Values1: "santacruz" Length:9 Position:0, "1" Length:1 Position:9, 
+			Values2: "santacruz" Length:9 Position:0, "1" Length:1 Position:9, 
+			Values3: "santacruz" Length:9 Position:0, "1" Length:1 Position:9, 
+			Values4: "santa" Length:5 Position:0, "cruz" Length:4 Position:5, "1" Length:1 Position:9, 
+			Values5: "santa" Length:5 Position:0, "cruz1" Length:5 Position:5, 
+			Values6: "sant" Length:4 Position:0, "acruz1" Length:6 Position:4, 
+			Values7: "s" Length:1 Position:0, "anta" Length:4 Position:1, "cruz1" Length:5 Position:5, 
 
 Password: michigan05
-			Pattern1: Location/Undetected/
-			Pattern2: Undetected/Common1/Undetected/
-			Values1: "michigan" Length:8 Position:0, "0" Length:1 Position:8, 
-			Values2: "m" Length:1 Position:0, "ich" Length:3 Position:1, "igan0" Length:5 Position:4, 
+			Pattern1: Name/Undetected/
+			Pattern2: Location/Undetected/
+			Pattern3: Common1/Undetected/
+			Pattern4: Name/Undetected/
+			Pattern5: Name/Undetected/
+			Pattern6: Undetected/Name/Undetected/
+			Values1: "michigan" Length:8 Position:0, "05" Length:2 Position:8, 
+			Values2: "michigan" Length:8 Position:0, "05" Length:2 Position:8, 
+			Values3: "michigan" Length:8 Position:0, "05" Length:2 Position:8, 
+			Values4: "michi" Length:5 Position:0, "gan05" Length:5 Position:5, 
+			Values5: "mich" Length:4 Position:0, "igan05" Length:6 Position:4, 
+			Values6: "mic" Length:3 Position:0, "higa" Length:4 Position:3, "n05" Length:3 Position:7, 
 
 Password: gdr9pn2x
 			Pattern1: Undetected/
@@ -56,23 +78,29 @@ Password: gdr9pn2x
 
 Password: glow12power
 			Pattern1: Undetected/Common2/Undetected/Common1/
-			Values1: "glow12" Length:6 Position:0, "glow" Length:4 Position:0, "12powe" Length:6 Position:4, "power" Length:5 Position:6, 
+			Pattern2: Undetected/Name/Undetected/
+			Values1: "glow12" Length:6 Position:0, "glow" Length:4 Position:0, "12power" Length:7 Position:4, "power" Length:5 Position:6, 
+			Values2: "glow12" Length:6 Position:0, "powe" Length:4 Position:6, "r" Length:1 Position:10, 
 
 Password: hans.fried
-			Pattern1: Undetected/Common1/
-			Pattern2: Undetected/Location/
-			Values1: "hans." Length:5 Position:0, "fried" Length:5 Position:5, 
-			Values2: "hans.f" Length:6 Position:0, "ried" Length:4 Position:6, 
+			Pattern1: Undetected/Name/Undetected/Common1/
+			Pattern2: Undetected/Common2/Undetected/Name/
+			Pattern3: Undetected/Name/
+			Values1: "hans." Length:5 Position:0, "hans" Length:4 Position:0, ".fried" Length:6 Position:4, "fried" Length:5 Position:5, 
+			Values2: "hans." Length:5 Position:0, "hans" Length:4 Position:0, ".fried" Length:6 Position:4, "frie" Length:4 Position:5, 
+			Values3: "hans.f" Length:6 Position:0, "ried" Length:4 Position:6, 
 
 Password: hans.fried
-			Pattern1: Undetected/Common1/
-			Pattern2: Undetected/Location/
-			Values1: "hans." Length:5 Position:0, "fried" Length:5 Position:5, 
-			Values2: "hans.f" Length:6 Position:0, "ried" Length:4 Position:6, 
+			Pattern1: Undetected/Name/Undetected/Common1/
+			Pattern2: Undetected/Common2/Undetected/Name/
+			Pattern3: Undetected/Name/
+			Values1: "hans." Length:5 Position:0, "hans" Length:4 Position:0, ".fried" Length:6 Position:4, "fried" Length:5 Position:5, 
+			Values2: "hans." Length:5 Position:0, "hans" Length:4 Position:0, ".fried" Length:6 Position:4, "frie" Length:4 Position:5, 
+			Values3: "hans.f" Length:6 Position:0, "ried" Length:4 Position:6, 
 
 Password: fvuehic3gjbmaaq
 			Pattern1: Undetected/Common1/Undetected/
-			Values1: "fvue" Length:4 Position:0, "hic" Length:3 Position:4, "3gjbmaa" Length:7 Position:7, 
+			Values1: "fvu" Length:3 Position:0, "ehic" Length:4 Position:3, "3gjbmaaq" Length:8 Position:7, 
 
 Password: fkhganp
 			Pattern1: Undetected/

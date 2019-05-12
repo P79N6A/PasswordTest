@@ -28,28 +28,35 @@ DataComparison::~DataComparison()
 {
 }
 
+void DataComparison::readResources() {
+	DataComparison::readNamesList("datafiles/names.txt");
+	DataComparison::readDobsList("datafiles/dobs.txt");
+	DataComparison::readLocationsList("datafiles/locations.txt");
+	DataComparison::readCommonsList("datafiles/Commons.txt");
+}
+
 void DataComparison::readNamesList(string filePath) {//parameter refrence
-	f.FileHandling::readFile(DataComparison::namesList, filePath);
+	FileHandling::readFile(DataComparison::namesList, filePath);
 }
 
 void DataComparison::readDobsList(string filePath) {//parameter refrence
-	f.FileHandling::readFile(DataComparison::dobsList, filePath);
+	FileHandling::readFile(DataComparison::dobsList, filePath);
 }
 
 void DataComparison::readLocationsList(string filePath) {//parameter refrence
-	f.FileHandling::readFile(DataComparison::locationsList, filePath);
+	FileHandling::readFile(DataComparison::locationsList, filePath);
 }
 
 void DataComparison::readCommonsList(string filePath) {//parameter refrence
-	f.FileHandling::readFile(DataComparison::commonsList, filePath);
+	FileHandling::readFile(DataComparison::commonsList, filePath);
 }
 
 void DataComparison::readRawDataList(string filePath) {//parameter refrence
-	f.FileHandling::readFile(DataComparison::rawDataList, filePath);
+	FileHandling::readFile(DataComparison::rawDataList, filePath);
 }
 
 void DataComparison::lowerCaseRawDataList() {
-	d.lowerCase(DataComparison::rawDataList);
+	DataCleansing::lowerCase(DataComparison::rawDataList);
 }
 
 void DataComparison::extractEmailAndPassword(string delimiter) {//parameter refrence

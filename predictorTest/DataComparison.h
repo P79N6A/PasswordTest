@@ -29,28 +29,23 @@ public:
 	static vector<patternStructure> results;
 
 	//methods 
-	void readNamesList(string path);
-	void readDobsList(string path);
-	void readLocationsList(string path);
-	void readCommonsList(string path);
-	void readRawDataList(string path);
-	void lowerCaseRawDataList();
-	void extractEmailAndPassword(string delimiter);
-	void extractEmailNamesAndWebsites();
-	void nameListComparison(string pass);
-	void emailNameListComparison(string pass, vector<string>::iterator& pass_it);
-	void websiteListComparison(string pass, vector<string>::iterator& pass_it);
-	void dobListComparison(string pass);
-	void locationListComparison(string pass);
-	void commonWordListComparison(string pass);
-	vector<patternStructure> getResults();
+	static void readResources();
+	static void readNamesList(string path);
+	static void readDobsList(string path);
+	static void readLocationsList(string path);
+	static void readCommonsList(string path);
+	static void readRawDataList(string path);
+	static void lowerCaseRawDataList();
+	static void extractEmailAndPassword(string delimiter);
+	static void extractEmailNamesAndWebsites();
+	static void nameListComparison(string pass);
+	static void emailNameListComparison(string pass, vector<string>::iterator& pass_it);
+	static void websiteListComparison(string pass, vector<string>::iterator& pass_it);
+	static void dobListComparison(string pass);
+	static void locationListComparison(string pass);
+	static void commonWordListComparison(string pass);
+	static vector<patternStructure> getResults();
 	DataComparison();
 	~DataComparison();
-
-private:
-	FileHandling f;
-	DataCleansing d;
-	
-
 };
 
