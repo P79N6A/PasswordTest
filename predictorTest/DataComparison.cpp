@@ -17,10 +17,10 @@ vector<DataComparison::patternStructure> DataComparison::results;
 
 DataComparison::DataComparison()
 {
-	/*readNamesList("datafiles/names.txt");
-	readDobsList("datafiles/dobs.txt");
-	readLocationsList("datafiles/locations.txt");
-	readCommonsList("datafiles/Common.txt");*/
+	DataComparison::readNamesList("datafiles/names.txt");
+	DataComparison::readDobsList("datafiles/dobs.txt");
+	DataComparison::readLocationsList("datafiles/locations.txt");
+	DataComparison::readCommonsList("datafiles/Common.txt");
 }
 
 
