@@ -22,8 +22,3 @@ void DataCleansing::lowerCase(vector<string>& raw_data_vector) {
 		transform(it->begin(), it->end(), it->begin(), ::tolower);
 	}
 }
-
-//Experiment
-void DataCleansing::expLowerCase(string& str) {
-	transform(str.begin(), str.end(), str.begin(), ::tolower);
-}

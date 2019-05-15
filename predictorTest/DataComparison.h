@@ -46,17 +46,6 @@ public:
 	static void commonWordListComparison(string pass);
 	static vector<patternStructure> getResults();
 
-	//Experiments
-	static string email;
-	static string password;
-	static string emailName;
-	static string website;
-
-	static void expExtractEmailAndPassword(string& str, string delimiter);
-	static void expExtractEmailNameAndWebsite();
-	static void expEmailNameListCoparison();
-	static void expWebsiteListComparison();
-
 	DataComparison();
 	~DataComparison();
 };
