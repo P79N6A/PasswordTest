@@ -8,7 +8,10 @@ using namespace std;
 class DataCleansing
 {
 public:
-	static vector<string> delimeterRemover(vector<string>& raw_vector, string delimeter);
+	static void delimeterRemover(vector<string>& raw_vector, string delimeter);
 	static void lowerCase(vector<string>& raw_data_vector);
+	//Experiment
+	static void expLowerCase(string& str);
+
 };
 

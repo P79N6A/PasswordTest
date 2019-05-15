@@ -2,7 +2,7 @@
 #include "DataCleansing.h"
 
 
-vector<string> DataCleansing::delimeterRemover(vector<string>& raw_vector, string delimeter) {//??? parameter as refrence
+void DataCleansing::delimeterRemover(vector<string>& raw_vector, string delimeter) {//??? parameter as refrence
 	string raw_String;
 	size_t found;
 	for (auto it = raw_vector.begin(); it != raw_vector.end(); it++) {
@@ -21,4 +21,9 @@ void DataCleansing::lowerCase(vector<string>& raw_data_vector) {
 	for (auto it = raw_data_vector.begin(); it != raw_data_vector.end(); it++) {
 		transform(it->begin(), it->end(), it->begin(), ::tolower);
 	}
+}
+
+//Experiment
+void DataCleansing::expLowerCase(string& str) {
+	transform(str.begin(), str.end(), str.begin(), ::tolower);
 }

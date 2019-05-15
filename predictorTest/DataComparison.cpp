@@ -15,6 +15,12 @@ vector<string> DataComparison::websitesList;//vector to store websites extracted
 vector<string> DataComparison::mobilesList;//
 vector<DataComparison::patternStructure> DataComparison::results;
 
+//Experiment
+string DataComparison::email;
+string DataComparison::password;
+string DataComparison::emailName;
+string DataComparison::website;
+
 DataComparison::DataComparison()
 {
 	DataComparison::readNamesList("datafiles/names.txt");
@@ -81,11 +87,9 @@ void DataComparison::extractEmailNamesAndWebsites() {
 	for (auto it = DataComparison::emailsList.begin(); it != DataComparison::emailsList.end(); it++) {
 		found = it->find("@");
 		if (found != string::npos) {
-			if (found != string::npos) {
-				DataComparison::emailNamesList.push_back(it->substr(0, found));
-				DataComparison::websitesList.push_back(it->substr(found + 1, it->length() - 1));
-				continue;
-			}
+			DataComparison::emailNamesList.push_back(it->substr(0, found));
+			DataComparison::websitesList.push_back(it->substr(found + 1, it->length() - 1));
+			continue;
 		}
 	}
 	DataComparison::emailsList.clear(); DataComparison::emailsList.shrink_to_fit();
@@ -180,4 +184,42 @@ void DataComparison::commonWordListComparison(string pass) {//parameter refrence
 //return vector results
 vector<DataComparison::patternStructure> DataComparison::getResults() {
 	return DataComparison::results;
+}
+
+
+//Experiments
+void DataComparison::expExtractEmailAndPassword(string& str, string delimiter) {
+	size_t found, foundDelimeter;
+	found = str.find("@");
+	if (found != string::npos) {
+		foundDelimeter = str.find(delimiter, found + 1);
+		if (foundDelimeter != string::npos) {
+			DataComparison::email = str.substr(0, foundDelimeter);
+			DataComparison::password = str.substr(foundDelimeter + 1, str.length() - 1);
+		}
+	}
+}
+
+void DataComparison::expExtractEmailNameAndWebsite() {
+	size_t found;
+	found = DataComparison::email.find("@");
+	if (found != string::npos) {
+		DataComparison::emailName = DataComparison::email.substr(0, found);
+		DataComparison::website = DataComparison::email.substr(found + 1, DataComparison::email.length() - 1);
+	}
+	DataComparison::email.clear(); DataComparison::email.shrink_to_fit();
+}
+
+void DataComparison::expEmailNameListCoparison() {
+	size_t found = DataComparison::password.find(DataComparison::emailName);
+	if (found != string::npos) {
+		DataComparison::results.push_back({ "email_Name/", DataComparison::emailName, static_cast<int>(DataComparison::emailName.length()), static_cast<int>(found) });
+	}
+}
+
+void DataComparison::expWebsiteListComparison() {
+	size_t found = DataComparison::password.find(DataComparison::website);
+	if (found != string::npos) {
+		DataComparison::results.push_back({ "Website/", DataComparison::website, static_cast<int>(DataComparison::website.length()), static_cast<int>(found) });
+	}
 }
